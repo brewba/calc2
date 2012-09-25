@@ -11,6 +11,7 @@ function initialize(){
  minus=document.calc.operator.options[1]
  divide=document.calc.operator.options[2]
  multiply=document.calc.operator.options[3]
+ modulo=document.calc.operator.options[4]
 }
 
 function calculate(){
@@ -23,7 +24,9 @@ function calculate(){
     if (divide.selected)
         document.calc.answer.value = a / b
     if (multiply.selected)
-        document.calc.answer.value = a * b  
+        document.calc.answer.value = a * b
+    if (modulo.selected)
+        document.calc.answer.value = a % b
 }
 
 </script>
@@ -44,6 +47,7 @@ Change the operation via the dropdown selection box if desired.
 <option value=minus>-
 <option value=divide>/
 <option value=multiply>*
+<option value=modulo>%
 </select>
 
 <input type=text name=val2 size=10>
