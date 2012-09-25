@@ -11,11 +11,7 @@ function initialize(){
  minus=document.calc.operator.options[1]
  divide=document.calc.operator.options[2]
  multiply=document.calc.operator.options[3]
-<<<<<<< HEAD
- modulo=document.calc.operator.options[4]
-=======
  max=document.calc.operator.options[4]
->>>>>>> d003b91... add max function
 }
 
 function calculate(){
@@ -29,13 +25,8 @@ function calculate(){
         document.calc.answer.value = a / b
     if (multiply.selected)
         document.calc.answer.value = a * b
-<<<<<<< HEAD
-    if (modulo.selected)
-        document.calc.answer.value = a % b
-=======
-	if (max.selected)
-		document.calc.answer.value = Math.max(a,b)
->>>>>>> d003b91... add max function
+    if (max.selected)
+        document.calc.answer.value = Math.max(a,b)
 }
 
 </script>
@@ -56,20 +47,12 @@ Change the operation via the dropdown selection box if desired.
 <option value=minus>-
 <option value=divide>/
 <option value=multiply>*
-<<<<<<< HEAD
-<option value=modulo>%
-=======
 <option value=max>max
->>>>>>> d003b91... add max function
 </select>
 
 <input type=text name=val2 size=10>
-<input type=button value="=" onClick="calculate()">
 <input type=text name=answer size=10>
-<<<<<<< HEAD
-=======
 <input type=button value="show answer" onClick="calculate()">
->>>>>>> d003b91... add max function
 </form>
 
 <br><br>
